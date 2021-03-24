@@ -7,7 +7,7 @@ from .config import Config
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'Som3$ec5etK*y'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://proj1:password@localhost/proj1'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://cnneedlquvdmhq:e2854ebd6c69f303e7e55c2d0db5f2073680bf73d90a57cf0e98132f244c88b6@ec2-54-164-22-242.compute-1.amazonaws.com:5432/dc8sj47hchbrdc'
 db = SQLAlchemy(app)
 app.config.from_object(Config)
 
