@@ -11,11 +11,7 @@ from app.forms import PropertyForm
 from app.models import Property
 from werkzeug.utils import secure_filename
 from app import db
-import psycopg2
 
-def connect_db():
-    return psycopg2.connect(host="localhost",
-                            database="proj1", user="proj1", password="password")
 ###
 # Routing for your application.
 ###
